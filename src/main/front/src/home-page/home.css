@@ -1,0 +1,30 @@
+.proverb {
+    font-size: 50px;
+    text-align: center;
+    font-family: "Marker Felt", "fantasy";
+    color: #03516b;
+}
+
+.gif {
+    position: absolute;
+    width: 20%;
+    margin-left: 10%;
+}
+
+.gif2 {
+    position: absolute;
+    width: 15%;
+    margin-left: 5%;
+}
+
+.home-inline-div-gif {
+    display: flex;
+}
+
+.find-a-job {
+    margin-left: 35%;
+    font-size: 35px;
+    font-family: "Marker Felt", "fantasy";
+    color: #9c78d5;
+    margin-top: 4%;
+}
