@@ -1,7 +1,7 @@
 import React from 'react';
 import "./header.css"
 import { FaUser } from "react-icons/fa";
-import logo from "../pictures/vecteezy_illustration-vector-graphic-of-job-or-people-search-logo_-removebg-preview.png"
+import logo from "../../pictures/vecteezy_illustration-vector-graphic-of-job-or-people-search-logo_-removebg-preview.png"
 import {Link} from "react-router-dom";
 import {Button} from 'react-bootstrap';
 const Header = () => {

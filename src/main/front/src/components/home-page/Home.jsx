@@ -1,6 +1,6 @@
 import React from 'react';
-import gif from "../pictures/work-from-home-wfh.gif";
-import mouse from "../pictures/Cursor-Click-Sticker-Cursor-Cl-unscreen.gif";
+import gif from "../../pictures/work-from-home-wfh.gif";
+import mouse from "../../pictures/Cursor-Click-Sticker-Cursor-Cl-unscreen.gif";
 import "./home.css";
 
 const Home = () => {
