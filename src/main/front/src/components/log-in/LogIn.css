@@ -1,0 +1,27 @@
+.bg-log-in-form {
+    width: 30%;
+    margin-top: -10%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(52, 52, 52, 0.7);
+    padding: 3% 1%;
+    border-radius: 3%;
+}
+
+.log-in-title{
+    text-align: center;
+    font-size: xx-large;
+    font-style: inherit;
+}
+
+.divide-in-log-in-form {
+    text-align: center;
+}
+
+.email-more-in-right {
+    margin-left: 5px;
+}
+
+.pass-more-in-right {
+    margin-left: 5px;
+}

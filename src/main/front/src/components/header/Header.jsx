@@ -19,7 +19,7 @@ const Header = () => {
                 <a href="/Employers">EMPLOYERS</a>
                 <div id="indicator"></div>
             </nav>
-            <Button href="#" className="login-button" variant="outline-dark"><FaUser/></Button>
+            <Button href="#" className="login-button" variant="outline-dark"><Link className="link-in-button" to="/Log-in"><FaUser/></Link></Button>
         </div>
 
     );
