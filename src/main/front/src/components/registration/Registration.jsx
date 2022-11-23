@@ -32,6 +32,9 @@ const Registration = () => {
     }
 
     const validatePass1 = () => {
+        if (pass2Error==="Passwords does not match") {
+            setPass2Error("");
+        }
         if (pass1==="") {
             setPass1Error("Please enter Password")
         } else if (pass1 !== pass2) {
