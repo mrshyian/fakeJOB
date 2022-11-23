@@ -1,0 +1,33 @@
+.single-employer-card {
+    flex-direction: row;
+    background-color: rgba(255,255,255,0.8);
+    width: 80%;
+    margin: 10px auto;
+}
+
+.single-employer-img {
+    float: left;
+    max-width: 140px;
+}
+
+.single-employer-title {
+    float: left;
+    margin-left: 30px;
+}
+
+.company-location {
+    color: dimgrey;
+    font-size: small;
+    margin-top: 10px;
+    margin-right: 10%;
+}
+
+.link-to-company-page {
+    color: black;
+    text-decoration: none;
+}
+
+.link-to-company-page:hover {
+    color: #03516b;
+}
+
