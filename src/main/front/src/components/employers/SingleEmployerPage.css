@@ -1,0 +1,71 @@
+.employer-page-card-group {
+    width: 85%;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+.left-employer-page-card {
+    background-color: rgba(225, 225, 225, 0.8);
+}
+
+.right-employer-page-card {
+    background-color: rgba(225, 225, 225, 0.8);
+}
+
+.special-div-1 {
+    flex-direction: row;
+}
+
+.employer-logo-1 {
+    max-width: 240px;
+    float: left;
+    margin: 15px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-title-in {
+    font-size: 40px;
+    font-family: serif;
+    margin-top: 14%;
+}
+
+.left-card-text {
+    padding: 1% 10%;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.left-card-image {
+    max-width: 640px;
+    align-self: center;
+    border-radius: 0;
+}
+
+.separating-line {
+    text-align: center;
+    color: rgb(48,145,182);
+}
+
+.right-card-location {
+    text-align: center;
+    color: rgb(43, 95, 115);
+}
+
+.right-card-stars {
+    text-align: center;
+    color: rgb(248,147,31);
+}
+
+.employer-opinions-cards {
+    align-self: center;
+}
+
+.more-opinions {
+    margin-left: 30%;
+}
+
