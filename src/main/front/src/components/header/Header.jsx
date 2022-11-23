@@ -16,7 +16,7 @@ const Header = () => {
                 <Link to="/Home">
                     Home
                 </Link>
-                <a href="/Employers">EMPLOYERS</a>
+                <Link to="/EmployersPage">EMPLOYERS</Link>
                 <div id="indicator"></div>
             </nav>
             <Button href="#" className="login-button" variant="outline-dark"><Link className="link-in-button" to="/Log-in"><FaUser/></Link></Button>

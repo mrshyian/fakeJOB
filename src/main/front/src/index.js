@@ -8,6 +8,7 @@ import Offers from "./components/offers-page/Offers";
 import Home from "./components/home-page/Home";
 import LogIn from "./components/log-in/LogIn";
 import Registration from "./components/registration/Registration";
+import SecondStepOfRegistrationForEmployer from "./components/registration/forEmployer/SecondStepOfRegistrationForEmployer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,8 +17,10 @@ root.render(
             <Route path="/" element={<App />}>
                 <Route path="/Offers" element={<Offers />}/>
                 <Route path="/Home" element={<Home />}/>
+                <Route path="/EmployersPage" element={<Home />}/>
                 <Route path="/Log-in" element={<LogIn />}/>
                 <Route path="/Registration" element={<Registration />}/>
+                <Route path="/Second-step-of-registration-for-employer" element={<SecondStepOfRegistrationForEmployer />}/>
             </Route>
         </Routes>
     </BrowserRouter>

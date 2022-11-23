@@ -6,3 +6,7 @@
     text-align: center;
     padding: 10px;
 }
+
+.error {
+    color: #ea3f3f;
+}
