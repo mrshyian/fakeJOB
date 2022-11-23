@@ -34,6 +34,9 @@ const Registration = () => {
     const validatePass1 = () => {
         if (pass1==="") {
             setPass1Error("Please enter Password")
+        } else if (pass1 !== pass2) {
+            setPass2Error("Passwords does not match")
+            setPass1Error("Passwords does not match")
         } else if (pass1.length < 8) {
             setPass1Error("Minimum 8 characters")
         }
