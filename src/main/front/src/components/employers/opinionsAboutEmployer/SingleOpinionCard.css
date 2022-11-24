@@ -1,0 +1,22 @@
+.opinion-card {
+    width: 95%;
+    margin: 10px;
+}
+
+.user-logo-in-opinion-box {
+    max-width: 30px;
+}
+
+.opinion-header-direction {
+    flex-direction: row;
+}
+
+.opinion-header-left-div-direction {
+    float: left;
+}
+
+.opinion-header-right-div-direction {
+    float: right;
+    color: #03516b;
+    font-size: 12px;
+}

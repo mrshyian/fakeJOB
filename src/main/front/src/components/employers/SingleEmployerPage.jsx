@@ -2,7 +2,7 @@ import React from 'react';
 import {Card, CardGroup} from "react-bootstrap";
 import logo from "../../pictures/airsoftfatty-mcdonalds.gif"
 import photo from "../../pictures/New-McDonald-HU-lg_(43261171540).jpg"
-import SingleOpinion from "./opinionsAboutEmployer/SingleOpinion";
+import SingleOpinionCard from "./opinionsAboutEmployer/SingleOpinionCard";
 import {Link} from "react-router-dom";
 import "./SingleEmployerPage.css"
 
@@ -43,9 +43,9 @@ const SingleEmployerPage = () => {
 
                 <Card.Body className="employer-opinions-cards">
                     <Card.Title className="card-title-in">Opinions</Card.Title>
-                    <SingleOpinion/>
-                    <SingleOpinion/>
-                    <SingleOpinion/>
+                    <SingleOpinionCard/>
+                    <SingleOpinionCard/>
+                    <SingleOpinionCard/>
                     <Link className="more-opinions" to={"/Opinions"}>More opinions</Link>
                 </Card.Body>
             </Card>
