@@ -1,12 +1,14 @@
 import React from 'react';
-import SingleEmployer from "./SingleEmployer";
+import SingleEmployerCard from "./SingleEmployerCard";
 
 const EmployersPage = () => {
     return (
         <div>
-            <SingleEmployer/>
-            <SingleEmployer/>
-            <SingleEmployer/>
+            <SingleEmployerCard/>
+            <SingleEmployerCard/>
+            <SingleEmployerCard/>
+            <SingleEmployerCard/>
+            <SingleEmployerCard/>
         </div>
     );
 };

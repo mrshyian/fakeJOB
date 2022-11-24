@@ -10,6 +10,7 @@ import LogIn from "./components/log-in/LogIn";
 import Registration from "./components/registration/Registration";
 import SecondStepOfRegistrationForEmployer from "./components/registration/forEmployer/SecondStepOfRegistrationForEmployer";
 import EmployersPage from "./components/employers/EmployersPage";
+import SingleEmployerPage from "./components/employers/SingleEmployerPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,7 @@ root.render(
                 <Route path="/Log-in" element={<LogIn />}/>
                 <Route path="/Registration" element={<Registration />}/>
                 <Route path="/Second-step-of-registration-for-employer" element={<SecondStepOfRegistrationForEmployer />}/>
+                <Route path="/EmployerPage" element={<SingleEmployerPage />}/>
             </Route>
         </Routes>
     </BrowserRouter>
