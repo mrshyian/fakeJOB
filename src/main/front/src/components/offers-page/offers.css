@@ -35,12 +35,11 @@ select option{
     align-items: stretch;
     margin-bottom: 1vh;
     max-width: 70%;
-    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-columns: 10% 55% 35%;
     grid-auto-rows: minmax(100px, auto);
 }
 
 .nested > div{
-
     margin-bottom: 1vh;
     padding:0.5em;
 }
@@ -50,9 +49,12 @@ select option{
 }
 
 .customSelect{
-    /*background: #00e2ff;*/
+    justify-content: space-between;
 
+}
 
+.customSelect > span{
+    margin-left: 15px;
 }
 
 .com-logo{
@@ -60,20 +62,25 @@ select option{
 }
 
 .job-req {
-    display: grid;
-    grid-template-columns: repeat(15, 1fr);
+
+    grid-template-columns: repeat(9, 1fr);
     grid-auto-rows: minmax(5px, auto);
     margin-top: 10px;
     margin-bottom: auto;
 
+    align-items: stretch;
 
 }
 
 .job-req > p{
     margin: 0 1px 1px 5px;
-    border-radius: 15px;
-    padding: 7px;
+    border-radius: 5px;
+    padding: 6px;
+    max-width: min-content;
+    text-align: center;
     /*background: #d6d9d9;*/
     background: #f5f0f0;
     opacity: 0.9;
+    justify-content: space-between;
+    float: left;
 }

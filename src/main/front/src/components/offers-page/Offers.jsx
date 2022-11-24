@@ -6,6 +6,7 @@ import logo from "../../pictures/logoAskme2.png";
 import "./offers.css";
 import {GrLocation} from "react-icons/gr";
 import {GiGraduateCap} from "react-icons/gi";
+import {AiTwotoneExperiment} from "react-icons/ai";
 const Offers = () => {
     return (
         <div>
@@ -122,6 +123,8 @@ const Offers = () => {
                 </div>
 
             </Card>
+
+            {/*--------------------------------------------------------------------------*/}
             <Card className="nested">
 
                 <div>
@@ -144,6 +147,12 @@ const Offers = () => {
                                 <option value="3">Wrocław</option>
                             </select>
 
+
+
+                                 <span> <AiTwotoneExperiment/>  Doświadczenie: min 3 lata na podobnym stanowisku</span>
+
+
+
                         </div>
 
                         {/*<div>*/}
@@ -159,7 +168,14 @@ const Offers = () => {
                             <p>CSS</p>
                             <p>HTML5</p><p>Java</p>
                             <p>CSS</p>
-                            <p>HTML5</p>
+                            <p>HTML5</p>  <p>CSS</p>
+                            <p>HTML5</p><p>Java</p>
+                            <p>CSS</p>
+                            <p>HTML5</p><p>Java</p>
+                            <p>CSS</p>
+                            <p>HTML5</p><p>Java</p>
+                            <p>CSS</p>
+                            <p>kubernetes/jenkins</p>
                         </div>
 
 
@@ -168,8 +184,8 @@ const Offers = () => {
                 </div>
                 <div>
                     <h3><GiGraduateCap/> Junior</h3>
-
                 </div>
+
 
             </Card>
 
