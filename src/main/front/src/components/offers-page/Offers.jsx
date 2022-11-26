@@ -13,13 +13,14 @@ import {RiMoneyDollarCircleFill} from "react-icons/ri";
 import {IoStar, IoStarOutline} from "react-icons/io5";
 import {HiDocumentText} from "react-icons/hi";
 import OffersCarousel from "./offersCarousel/OffersCarousel";
-import CountryApi from "./countryAPI/CountryAPI";
+import CountryApi from "./searchBar/countryAPI/CountryAPI";
+import SearchBar from "./searchBar/SearchBar";
 const Offers = () => {
     return (
         <div>
 
-            <CountryApi/>
-
+            {/*<CountryApi/>*/}
+            <CountryApi placeholder="Enter city"/>
 
             <Card className="nested">
                 <div>
