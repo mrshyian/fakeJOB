@@ -63,3 +63,10 @@ select option{
 .offer-section{
     border-left: 3px solid #cecece;
 }
+
+.api-card{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 70%;
+
+}

@@ -4,7 +4,6 @@ import img from "../../pictures/img.png";
 import logo from "../../pictures/logoAskme2.png";
 import mcd from "../../pictures/New-McDonald-HU-lg_(43261171540).jpg";
 import mac from "../../pictures/airsoftfatty-mcdonalds.gif";
-
 import "./offers.css";
 import {GrLocation} from "react-icons/gr";
 import {GiGraduateCap} from "react-icons/gi";
@@ -14,13 +13,16 @@ import {IoStar, IoStarOutline} from "react-icons/io5";
 import {HiDocumentText} from "react-icons/hi";
 import OffersCarousel from "./offersCarousel/OffersCarousel";
 import CountryApi from "./searchBar/countryAPI/CountryAPI";
-import SearchBar from "./searchBar/SearchBar";
+
 const Offers = () => {
     return (
         <div>
 
             {/*<CountryApi/>*/}
-            <CountryApi placeholder="Enter city"/>
+            <div className="api-card">
+                <CountryApi  placeholder="Enter city"/>
+            </div>
+
 
             <Card className="nested">
                 <div>

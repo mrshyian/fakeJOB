@@ -5,8 +5,10 @@ import {FaSearchLocation} from "react-icons/fa";
 
 const CountryApi = (props) => {
     const [data, setData] = useState([]);
+    const [searchCity, setSearchCity] = useState("");
     const [selectedCity, setSelectedCity] = useState();
     const [filteredData, setFilteredData] = useState([]);
+    const [a, setA] = useState([]);
     const cities = data.filter(city => city.subcountry === "Greater Poland Voivodeship");
 
     useEffect(() => {
@@ -17,50 +19,25 @@ const CountryApi = (props) => {
     }, [])
 
     const handleFilter = (event) => {
-        const searchCity = event.target.value;
-
+        setSearchCity(event.target.value);
         const newFilter = cities.filter((value) => {
             return value.name.toLowerCase().includes(searchCity.toLowerCase());
         });
-        setFilteredData(newFilter);
+        if(searchCity === ""){
+            setFilteredData([]);
+        }else{
+            setFilteredData(newFilter);
+        }
     }
 
-    const handleCity = (e) => {
-        setSelectedCity(e.target.value)
+    const handleChosen = (event) => {
+      setSelectedCity(event.target.value);
+      setSearchCity(event.target.value);
+      // setFilteredData([]);
     }
+
     return (
         <div>
-            {/*<Card>*/}
-            {/*    /!*<div>*!/*/}
-            {/*    /!*    <select onChange={(e) => handleCity(e)}>*!/*/}
-            {/*    /!*        <option value="">Select City</option>*!/*/}
-            {/*    /!*        <option value="Remote">Remote</option>*!/*/}
-            {/*    /!*        {cities.map(items => <option key={items.name}>{items.name}</option>)}*!/*/}
-            {/*    /!*    </select>{ selectedCity }*!/*/}
-            {/*    /!*</div>*!/*/}
-            {/*    <div>*/}
-            {/*        <input type="text" placeholder={"placeholder"} onChange={handleFilter}/>*/}
-            {/*    </div>*/}
-            {/*    <div>*/}
-            {/*        {filteredData.length !==0 && (*/}
-            {/*            <div>*/}
-            {/*                <p>*/}
-            {/*                    {cities.map(items => <option key={items.name}>{items.name}</option>)}*/}
-            {/*                </p>*/}
-            {/*            </div>*/}
-            {/*            */}
-            {/*        )}*/}
-            {/*        {data.map((value) => {*/}
-            {/*            return(*/}
-            {/*                <p>{value}</p>*/}
-            {/*            )*/}
-            {/*        })}*/}
-
-            {/*    </div>*/}
-            {/*</Card>*/}
-
-
-
             <Card>
                 <div className="search">
                     <div className="search-input">
@@ -70,34 +47,18 @@ const CountryApi = (props) => {
                         </div>
                     </div>
                     {filteredData.length !==0 && (
+
                         <div className="data-results">
                             <p>
-                                {filteredData.map(items => <option key={items.name}>{items.name}</option>)}
+                                {filteredData.slice(0,5).reverse().map(items => <option onClick={handleChosen} key={items.name}>{items.name}</option>)}
                             </p>
                         </div>
 
                     )}
-                    {/*{cities.map((value,key) => {*/}
-                    {/*    return(*/}
-                    {/*        <p>{value}</p>*/}
-                    {/*    )*/}
-                    {/*})}*/}
+                    {selectedCity}
 
-
-
-
-                    {/*<div className="data-results">*/}
-                    {/*    <p>*/}
-                    {/*        {cities.map(items => <option key={items.name}>{items.name}</option>)}*/}
-                    {/*    </p>*/}
-                    {/*</div>*/}
                 </div>
             </Card>
-
-
-
-
-
         </div>
     );
 };
