@@ -1,0 +1,13 @@
+.opinion-list-title {
+    text-align: center;
+    color: #03516b;
+    font-size: 50px;
+    font-family: serif;
+    font-weight: bold;
+    margin-top: -8%;
+}
+
+.segregate-opinions-by {
+    align-self: center;
+    text-align: center;
+}

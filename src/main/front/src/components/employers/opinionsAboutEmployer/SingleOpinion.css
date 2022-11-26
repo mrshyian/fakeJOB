@@ -1,4 +1,52 @@
-.opinion-card {
-    width: 95%;
-    margin: 10px;
+.single-opinion-card {
+    flex-direction: row;
+    background-color: rgba(255,255,255,0.8);
+    width: 70%;
+    margin: 10px auto;
+}
+
+.user-avatar-opinion {
+    float: left;
+    max-width: 90px;
+    margin: 20px;
+}
+
+.opinion {
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.username-opinion {
+    font-size: 20px;
+    color: #03516b;
+    font-weight: bold;
+}
+
+.opinion-date-and-stars {
+    flex-direction: row;
+
+}
+
+.opinion-date {
+    color: dimgrey;
+    opacity: 0.8;
+    float: left;
+    margin-right: 10%;
+}
+
+.opinion-stars {
+    color: goldenrod;
+}
+
+.opinion-vote-div {
+text-align: center;
+
+}
+
+.opinion-rating-block {
+    margin-left: auto;
+    margin-top: 5%;
+    margin-right: 1%;
 }
