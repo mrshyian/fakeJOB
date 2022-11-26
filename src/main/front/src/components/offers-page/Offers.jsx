@@ -12,6 +12,7 @@ import {AiTwotoneExperiment} from "react-icons/ai";
 import {RiMoneyDollarCircleFill} from "react-icons/ri";
 import {IoStar, IoStarOutline} from "react-icons/io5";
 import {HiDocumentText} from "react-icons/hi";
+import OffersCarousel from "./offersCarousel/OffersCarousel";
 const Offers = () => {
     return (
         <div>
@@ -99,7 +100,8 @@ const Offers = () => {
                     <h4> <RiMoneyDollarCircleFill/> 26 000-32 000 PLN net (+ TAX) / month.</h4>
                     <h4> <HiDocumentText/> Contract of employment, Contract B2B</h4>
                 </div>
-            </Card>            <Card className="nested">
+            </Card>
+            <Card className="nested">
                 <div>
                     <img className="com-logo"  src={mac} alt=""/>
                 </div>
@@ -172,6 +174,7 @@ const Offers = () => {
                     <h4> <HiDocumentText/> Contract of employment</h4>
                 </div>
             </Card>
+            <OffersCarousel/>
         </div>
     );
 };
