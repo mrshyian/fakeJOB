@@ -152,7 +152,7 @@ const Offers = () => {
 
 
 
-                            <span> <AiTwotoneExperiment/>  Doświadczenie: min 3 lata na podobnym stanowisku</span>
+                            <span><AiTwotoneExperiment/>  Doświadczenie: min 3 lata na podobnym stanowisku</span>
 
 
 
@@ -207,9 +207,9 @@ const Offers = () => {
                             <h6>MC Don sp. zo.o. ★★★★☆</h6>
                         </div>
 
-                        <div className="customSelect"><GrLocation/>
+                        <div className="custom-select"><GrLocation/>
                             <select>
-                                <option>3 Localizacji </option>
+                                <option> 3 Localizacji </option>
                                 <option value="1">Poznań, Wielkopolskie</option>
                                 <option value="2">Warszawa</option>
                                 <option value="3">Wrocław</option>
@@ -217,7 +217,7 @@ const Offers = () => {
 
 
 
-                            <span> <AiTwotoneExperiment/>  Doświadczenie: min 3 lata na podobnym stanowisku</span>
+                            <span><AiTwotoneExperiment/>  Doświadczenie: min 3 lata na podobnym stanowisku</span>
 
 
 
