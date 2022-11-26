@@ -1,30 +1,13 @@
-
 select{
     background: transparent;
     border: transparent;
     cursor: pointer;
+
 }
 
 select option{
     background: rgba(162, 161, 161, 0.37);
 }
-
-/*.wrapper {*/
-/*    background: transparent;*/
-/*    display: grid;*/
-/*    grid-template-columns: 70% 30%;*/
-/*    grid-gap: 1em;*/
-/*    grid-auto-rows: minmax(100px, auto);*/
-/*}*/
-
-/*.wrapper > div{*/
-/*    background:#eee;*/
-/*    padding:1em;*/
-/*}*/
-
-/*.wrapper > div:nth-child(odd){*/
-/*    background:#ddd;*/
-/*}*/
 
 .nested {
     display: grid;
@@ -44,12 +27,9 @@ select option{
     padding:0.5em;
 }
 
-.nested > div:nth-child(odd){
-
-}
-
 .custom-select{
     justify-content: space-between;
+
 }
 
 .custom-select > span{
@@ -75,7 +55,6 @@ select option{
     max-width: min-content;
     text-align: center;
     background: #cecece;
-    /*background: #f5f0f0;*/
     opacity: 0.9;
     justify-content: space-between;
     float: left;
@@ -83,5 +62,4 @@ select option{
 
 .offer-section{
     border-left: 3px solid #cecece;
-    /*height: 100%;*/
 }
