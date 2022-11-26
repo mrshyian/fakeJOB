@@ -48,11 +48,11 @@ select option{
 
 }
 
-.customSelect{
+.custom-select{
     justify-content: space-between;
 }
 
-.customSelect > span{
+.custom-select > span{
     margin-left: 15px;
 }
 

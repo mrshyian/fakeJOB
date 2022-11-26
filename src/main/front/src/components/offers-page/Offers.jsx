@@ -142,7 +142,7 @@ const Offers = () => {
                             <h6>MC Don sp. zo.o. ★★★★☆</h6>
                         </div>
 
-                        <div className="customSelect"><GrLocation/>
+                        <div className="custom-select"><GrLocation/>
                             <select>
                                 <option>3 Localizacji </option>
                                 <option value="1">Poznań, Wielkopolskie</option>
