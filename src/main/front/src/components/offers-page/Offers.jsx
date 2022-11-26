@@ -13,9 +13,14 @@ import {RiMoneyDollarCircleFill} from "react-icons/ri";
 import {IoStar, IoStarOutline} from "react-icons/io5";
 import {HiDocumentText} from "react-icons/hi";
 import OffersCarousel from "./offersCarousel/OffersCarousel";
+import CountryApi from "./countryAPI/CountryAPI";
 const Offers = () => {
     return (
         <div>
+
+            <CountryApi/>
+
+
             <Card className="nested">
                 <div>
                     <img className="com-logo"  src={img} alt=""/>
