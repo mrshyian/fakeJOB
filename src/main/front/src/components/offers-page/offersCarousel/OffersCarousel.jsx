@@ -1,7 +1,9 @@
 import React from 'react';
-import {Card, Carousel} from "react-bootstrap";
+import Carousel from 'react-bootstrap/Carousel';
+import {Card} from "react-bootstrap";
 import img from "../../../pictures/img.png";
 import mac from "../../../pictures/airsoftfatty-mcdonalds.gif";
+import logo from "../../../pictures/logoAskme2.png"
 import {GrLocation} from "react-icons/gr";
 import {AiTwotoneExperiment} from "react-icons/ai";
 import {IoStarOutline} from "react-icons/io5";
@@ -12,8 +14,8 @@ import {HiDocumentText} from "react-icons/hi";
 const OffersCarousel = () => {
     return (
         <div>
-            <Carousel>
-                <Carousel.Item interval={3000}>
+            <Carousel fade>
+                <Carousel.Item >
                     <Card className="nested">
                         <div>
                             <img className="com-logo"  src={mac} alt=""/>
@@ -54,10 +56,10 @@ const OffersCarousel = () => {
                         </div>
                     </Card>
                 </Carousel.Item>
-                <Carousel.Item interval={500}>
+                <Carousel.Item >
                     <Card className="nested">
                         <div>
-                            <img className="com-logo"  src={mac} alt=""/>
+                            <img className="com-logo"  src={logo} alt=""/>
                         </div>
                         <div>
                             <div className="innerDiv">
@@ -98,7 +100,7 @@ const OffersCarousel = () => {
                 <Carousel.Item>
                     <Card className="nested">
                         <div>
-                            <img className="com-logo"  src={mac} alt=""/>
+                            <img className="com-logo"  src={img} alt=""/>
                         </div>
                         <div>
                             <div className="innerDiv">
@@ -137,6 +139,7 @@ const OffersCarousel = () => {
                     </Card>
                 </Carousel.Item>
             </Carousel>
+
         </div>
     );
 };
