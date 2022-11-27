@@ -1,0 +1,61 @@
+.carousel-body{
+    /*display: grid;*/
+    /*justify-content: center;*/
+    /*background: rgba(255,255,255,0.3);*/
+    /*grid-auto-columns: minmax(50px,auto);*/
+    /*justify-items: stretch;*/
+    /*align-items: stretch;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*grid-template-columns: repeat(9, 1fr);*/
+    /*!*max-width: 70%;*!*/
+    display: grid;
+    background: rgba(238, 238, 238, 0.9);
+    margin-right: auto;
+    margin-left: auto;
+    justify-items: stretch;
+    align-items: stretch;
+    margin-bottom: 1vh;
+    grid-column-gap: 10px;
+    max-width: 80%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-columns: minmax(100px, auto);
+}
+
+/*.carousel-body > div{*/
+/*    background: #9c78d5;*/
+/*    padding: 1em;*/
+/*    justify-content: center;*/
+/*    text-align: center;*/
+/*    max-width: 40%;*/
+/*}*/
+
+.carousel-body > div:nth-child(odd){
+    background: #4e79be;
+
+}
+
+.com-logo-car{
+    max-height: 200px;
+    max-width: 200px;
+    /*background: #9c78d5;*/
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1vh;
+}
+
+.card-body{
+    background: #9c78d5;
+    padding: 1em;
+    justify-content: center;
+    text-align: center;
+    /*max-width: 30%;*/
+}
+
+.carousel{
+    margin-right: auto;
+    margin-left: auto;
+    grid-column-gap: 10px;
+
+}
