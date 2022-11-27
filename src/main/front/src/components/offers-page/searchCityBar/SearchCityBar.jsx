@@ -10,6 +10,7 @@ const SearchCityBar = (props) => {
     const [selectedCity, setSelectedCity] = useState();
     const [filteredData, setFilteredData] = useState([]);
     const [enteredWord, setEnteredWord] = useState("");
+    const [currentWord, setCurrentWord] = useState("");
     const cities = data.filter(city => city.subcountry === "Greater Poland Voivodeship");
 
     useEffect(() => {
@@ -21,6 +22,7 @@ const SearchCityBar = (props) => {
 
     const handleFilter = (event) => {
         const searchCity = event.target.value;
+        setCurrentWord(searchCity);
         setEnteredWord(searchCity);
         const newFilter = cities.filter((value) => {
             return value.name.toLowerCase().includes(searchCity.toLowerCase());
@@ -41,6 +43,7 @@ const SearchCityBar = (props) => {
     const clearInput = () =>{
         setFilteredData([]);
         setEnteredWord("");
+        setCurrentWord("");
     }
 
     return (
@@ -53,7 +56,7 @@ const SearchCityBar = (props) => {
                                placeholder={props.placeholder}
                                onChange={handleFilter}/>
                         <div className="search-icon">
-                            {filteredData.length ===0 ? (
+                            {currentWord.length ===0 ? (
                                 <FaSearchLocation/>
                             ) : (
                                 <CloseButton id="clearBtn" onClick={clearInput} />
@@ -72,6 +75,7 @@ const SearchCityBar = (props) => {
                     )}
                     {selectedCity}
                     {/*{searchCity}*/}
+                    {/*{newWord}*/}
 
                 </div>
             </Card>
