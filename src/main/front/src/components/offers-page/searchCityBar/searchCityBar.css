@@ -1,0 +1,36 @@
+.data-results{
+    cursor: pointer;
+}
+
+.search input {
+
+    border: 0;
+    border-radius: 2px 0 2px 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 30px;
+    width: 200px;
+}
+
+.data-results:hover{
+    background: #cecece;
+}
+
+.search-input{
+    display: flex;
+}
+
+.search-icon{
+
+    background-color: white;
+    display: grid;
+    place-items: center;
+
+}
+input:focus{
+    outline: none;
+}
+
+.search-icon svg {
+    font-size: 20px;
+}

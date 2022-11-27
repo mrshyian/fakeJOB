@@ -12,15 +12,15 @@ import {RiMoneyDollarCircleFill} from "react-icons/ri";
 import {IoStar, IoStarOutline} from "react-icons/io5";
 import {HiDocumentText} from "react-icons/hi";
 import OffersCarousel from "./offersCarousel/OffersCarousel";
-import CountryApi from "./searchBar/countryAPI/CountryAPI";
+import SearchCityBar from "./searchCityBar/SearchCityBar";
 
 const Offers = () => {
     return (
         <div>
 
-            {/*<CountryApi/>*/}
+            {/*<SearchCityBar/>*/}
             <div className="api-card">
-                <CountryApi  placeholder="Enter city"/>
+                <SearchCityBar placeholder="Enter city"/>
             </div>
 
 
