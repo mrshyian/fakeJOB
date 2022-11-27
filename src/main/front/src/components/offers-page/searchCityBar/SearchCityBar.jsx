@@ -9,7 +9,7 @@ const SearchCityBar = (props) => {
 
     const [selectedCity, setSelectedCity] = useState();
     const [filteredData, setFilteredData] = useState([]);
-    // const [a, setA] = useState([]);
+    const [enteredWord, setEnteredWord] = useState("");
     const cities = data.filter(city => city.subcountry === "Greater Poland Voivodeship");
 
     useEffect(() => {
@@ -21,7 +21,7 @@ const SearchCityBar = (props) => {
 
     const handleFilter = (event) => {
         const searchCity = event.target.value;
-
+        setEnteredWord(searchCity);
         const newFilter = cities.filter((value) => {
             return value.name.toLowerCase().includes(searchCity.toLowerCase());
         });
@@ -34,8 +34,13 @@ const SearchCityBar = (props) => {
 
     const handleChosen = (event) => {
       setSelectedCity(event.target.value);
-
       setFilteredData([]);
+      setEnteredWord("");
+    }
+
+    const clearInput = () =>{
+        setFilteredData([]);
+        setEnteredWord("");
     }
 
     return (
@@ -43,16 +48,25 @@ const SearchCityBar = (props) => {
             <Card>
                 <div className="search">
                     <div className="search-input">
-                        <input type="text" placeholder={props.placeholder} onChange={handleFilter}/>
+                        <input type="text"
+                               value={enteredWord}
+                               placeholder={props.placeholder}
+                               onChange={handleFilter}/>
                         <div className="search-icon">
-                            {filteredData.length ===0 ? <FaSearchLocation/> : <CloseButton />}
+                            {filteredData.length ===0 ? (
+                                <FaSearchLocation/>
+                            ) : (
+                                <CloseButton id="clearBtn" onClick={clearInput} />
+                            )}
 
                         </div>
                     </div>
                     {filteredData.length !==0 && (
                         <div>
                             <p>
-                                {filteredData.slice(0,5).reverse().map(items => <option className="data-results" onClick={handleChosen} key={items.name}>{items.name}</option>)}
+                                {filteredData.slice(0,5).reverse().map(items =>
+                                    <option className="data-results" onClick={handleChosen} key={items.name}>{items.name}</option>
+                                )}
                             </p>
                         </div>
                     )}
