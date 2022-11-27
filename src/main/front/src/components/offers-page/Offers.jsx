@@ -17,13 +17,9 @@ import SearchCityBar from "./searchCityBar/SearchCityBar";
 const Offers = () => {
     return (
         <div>
-
-            {/*<SearchCityBar/>*/}
             <div className="api-card">
                 <SearchCityBar placeholder="Enter city"/>
             </div>
-
-
             <Card className="nested">
                 <div>
                     <img className="com-logo"  src={img} alt=""/>
