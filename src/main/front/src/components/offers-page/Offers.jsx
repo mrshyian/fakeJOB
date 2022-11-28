@@ -12,14 +12,16 @@ import {RiMoneyDollarCircleFill} from "react-icons/ri";
 import {IoStar, IoStarOutline} from "react-icons/io5";
 import {HiDocumentText} from "react-icons/hi";
 import OffersCarousel from "./offersCarousel/OffersCarousel";
-import SearchCityBar from "./searchCityBar/SearchCityBar";
+import SearchCityBar from "./userRequirements/searchCityBar/SearchCityBar";
+import UserRequirements from "./userRequirements/UserRequirements";
 
 const Offers = () => {
     return (
         <div>
             <div className="api-card">
-                <SearchCityBar placeholder="Enter city"/>
+                <UserRequirements/>
             </div>
+
             <Card className="nested">
                 <div>
                     <img className="com-logo"  src={img} alt=""/>

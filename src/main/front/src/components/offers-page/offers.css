@@ -70,3 +70,7 @@ select option{
     max-width: 70%;
 
 }
+
+.custom-slider{
+    width: 80%;
+}
