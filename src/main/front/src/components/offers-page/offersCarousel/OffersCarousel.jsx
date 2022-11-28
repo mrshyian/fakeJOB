@@ -16,11 +16,11 @@ const OffersCarousel = () => {
             <div>
                 <h2>Recent viewed:</h2>
             </div>
-            <Carousel  fade>
+            <Carousel indicators={false} >
                 <Carousel.Item >
 
-                    <div className="carousel-body" style={{background: "yellow"}}>
-                    <Card className="card-body">
+                    <div className="carousel-body">
+                    <Card className="card-body-offer">
                         <div>
                             <img className="com-logo-car" src={mcd} alt=""/>
                         </div>
@@ -32,9 +32,7 @@ const OffersCarousel = () => {
                             <h6>MC Don sp. zo.o. ★★★★☆</h6>
                         </div>
 
-                        <div>
-                            <h3 style={{  marginLeft: "90%"}}><IoStarOutline/> </h3>
-                        </div>
+
 
 
                         <div>
@@ -50,7 +48,7 @@ const OffersCarousel = () => {
                         </div>
 
 
-                    </Card><Card className="card-body">
+                    </Card><Card className="card-body-offer">
                         <div>
                             <img className="com-logo-car" src={mcd} alt=""/>
                         </div>
@@ -62,9 +60,7 @@ const OffersCarousel = () => {
                             <h6>MC Don sp. zo.o. ★★★★☆</h6>
                         </div>
 
-                        <div>
-                            <h3 style={{  marginLeft: "90%"}}><IoStarOutline/> </h3>
-                        </div>
+
 
 
                         <div>
@@ -80,7 +76,7 @@ const OffersCarousel = () => {
                         </div>
 
 
-                    </Card><Card className="card-body">
+                    </Card><Card className="card-body-offer">
                         <div>
                             <img className="com-logo-car" src={mcd} alt=""/>
                         </div>
@@ -92,9 +88,7 @@ const OffersCarousel = () => {
                             <h6>MC Don sp. zo.o. ★★★★☆</h6>
                         </div>
 
-                        <div>
-                            <h3 style={{  marginLeft: "90%"}}><IoStarOutline/> </h3>
-                        </div>
+
 
 
                         <div>
@@ -110,7 +104,7 @@ const OffersCarousel = () => {
                         </div>
 
 
-                    </Card><Card className="card-body">
+                    </Card><Card className="card-body-offer">
                         <div>
                             <img className="com-logo-car" src={mcd} alt=""/>
                         </div>
@@ -122,9 +116,7 @@ const OffersCarousel = () => {
                             <h6>MC Don sp. zo.o. ★★★★☆</h6>
                         </div>
 
-                        <div>
-                            <h3 style={{  marginLeft: "90%"}}><IoStarOutline/> </h3>
-                        </div>
+
 
 
                         <div>
@@ -140,7 +132,7 @@ const OffersCarousel = () => {
                         </div>
 
 
-                    </Card><Card className="card-body">
+                    </Card><Card className="card-body-offer">
                         <div>
                             <img className="com-logo-car" src={mcd} alt=""/>
                         </div>
@@ -152,9 +144,7 @@ const OffersCarousel = () => {
                             <h6>MC Don sp. zo.o. ★★★★☆</h6>
                         </div>
 
-                        <div>
-                            <h3 style={{  marginLeft: "90%"}}><IoStarOutline/> </h3>
-                        </div>
+
 
 
                         <div>
@@ -172,7 +162,7 @@ const OffersCarousel = () => {
 
                     </Card>
 
-                        <Card className="card-body">
+                        <Card className="card-body-offer">
                         <div>
                             <img className="com-logo-car" src={mcd} alt=""/>
                         </div>
@@ -183,11 +173,6 @@ const OffersCarousel = () => {
                         <div>
                             <h6>MC Don sp. zo.o. ★★★★☆</h6>
                         </div>
-
-                        <div>
-                            <h3 style={{  marginLeft: "90%"}}><IoStarOutline/> </h3>
-                        </div>
-
 
                         <div>
                             <h4><GiGraduateCap/> Junior/Mid</h4>
@@ -211,8 +196,38 @@ const OffersCarousel = () => {
 
                 <Carousel.Item >
 
-                    <div className="carousel-body" style={{background: "yellow"}}>
-                    <Card className="card-body">
+                    <div className="carousel-body">
+                    <Card className="card-body-offer">
+
+                        <div>
+                            <h4 style={{  marginLeft: "90%"}}><IoStarOutline/> </h4>
+                            <img className="com-logo-car" src={mac} alt=""/>
+                        </div>
+                        <div>
+                            <h2><a style={{textDecoration: "none", color: "black"}} href="#oferta"> Java Fullstack Hero </a></h2>
+                        </div>
+
+                        <div>
+                            <h6>MC Don sp. zo.o. ★★★★☆</h6>
+                        </div>
+
+
+
+
+                        <div>
+                            <h4><GiGraduateCap/> Junior/Mid</h4>
+                        </div>
+
+                        <div>
+                            <h4> <RiMoneyDollarCircleFill/> 2000-3000 PLN net (+ TAX) / month.</h4>
+                        </div>
+
+                        <div>
+                            <h4> <HiDocumentText/> Contract B2B</h4>
+                        </div>
+
+
+                    </Card><Card className="card-body-offer">
                         <div>
                             <img className="com-logo-car" src={mac} alt=""/>
                         </div>
@@ -242,7 +257,7 @@ const OffersCarousel = () => {
                         </div>
 
 
-                    </Card><Card className="card-body">
+                    </Card><Card className="card-body-offer">
                         <div>
                             <img className="com-logo-car" src={mac} alt=""/>
                         </div>
@@ -272,7 +287,7 @@ const OffersCarousel = () => {
                         </div>
 
 
-                    </Card><Card className="card-body">
+                    </Card><Card className="card-body-offer">
                         <div>
                             <img className="com-logo-car" src={mac} alt=""/>
                         </div>
@@ -302,37 +317,7 @@ const OffersCarousel = () => {
                         </div>
 
 
-                    </Card><Card className="card-body">
-                        <div>
-                            <img className="com-logo-car" src={mac} alt=""/>
-                        </div>
-                        <div>
-                            <h2><a style={{textDecoration: "none", color: "black"}} href="#oferta"> Java Fullstack Hero </a></h2>
-                        </div>
-
-                        <div>
-                            <h6>MC Don sp. zo.o. ★★★★☆</h6>
-                        </div>
-
-                        <div>
-                            <h3 style={{  marginLeft: "90%"}}><IoStarOutline/> </h3>
-                        </div>
-
-
-                        <div>
-                            <h4><GiGraduateCap/> Junior/Mid</h4>
-                        </div>
-
-                        <div>
-                            <h4> <RiMoneyDollarCircleFill/> 2000-3000 PLN net (+ TAX) / month.</h4>
-                        </div>
-
-                        <div>
-                            <h4> <HiDocumentText/> Contract B2B</h4>
-                        </div>
-
-
-                    </Card><Card className="card-body">
+                    </Card><Card className="card-body-offer">
                         <div>
                             <img className="com-logo-car" src={mac} alt=""/>
                         </div>
@@ -364,7 +349,7 @@ const OffersCarousel = () => {
 
                     </Card>
 
-                        <Card className="card-body">
+                        <Card className="card-body-offer">
                         <div>
                             <img className="com-logo-car" src={mac} alt=""/>
                         </div>

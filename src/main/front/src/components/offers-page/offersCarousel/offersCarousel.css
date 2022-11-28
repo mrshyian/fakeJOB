@@ -10,7 +10,7 @@
     /*grid-template-columns: repeat(9, 1fr);*/
     /*!*max-width: 70%;*!*/
     display: grid;
-    background: rgba(238, 238, 238, 0.9);
+    background: rgba(238, 238, 238, 0);
     margin-right: auto;
     margin-left: auto;
     justify-items: stretch;
@@ -30,12 +30,13 @@
 /*    max-width: 40%;*/
 /*}*/
 
-.carousel-body > div:nth-child(odd){
-    background: #4e79be;
+/*.carousel-body > div:nth-child(odd){*/
+/*    background: #4e79be;*/
 
-}
+/*}*/
 
 .com-logo-car{
+
     max-height: 200px;
     max-width: 200px;
     /*background: #9c78d5;*/
@@ -45,8 +46,10 @@
     margin-bottom: 1vh;
 }
 
-.card-body{
-    background: #9c78d5;
+.card-body-offer{
+    /*background: #9c78d5;*/
+    height: 600px;
+    background: rgba(238, 238, 238, 0.97);
     padding: 1em;
     justify-content: center;
     text-align: center;
