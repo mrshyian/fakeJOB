@@ -3,6 +3,7 @@ import "./userRequirements.css"
 import SearchCityBar from "./searchCityBar/SearchCityBar";
 import {Card} from "react-bootstrap";
 import SearchPositionBar from "./searchPositionBar/SearchPositionBar";
+import SearchTechnologiesBar from "./searchTechnologiesBar/SearchTechnologiesBar";
 
 const UserRequirements = () => {
     const [rangeValue, setRangeValue] = useState();
@@ -13,12 +14,17 @@ const UserRequirements = () => {
 
     return (
         <div>
-            <Card className="main-body-req">
-                <div className="search-bar">
-                    <SearchPositionBar placeholder="Enter position"/>
-                </div>
-                <div className="search-bar">
-                    <SearchCityBar placeholder="Enter city"/>
+            <Card >
+                <div className="main-body-req">
+                    <div className="search-bar">
+                        <SearchPositionBar placeholder="Enter position"/>
+                    </div>
+                    <div className="search-bar">
+                        <SearchCityBar placeholder="Enter city"/>
+                    </div>
+                    <div className="search-bar">
+                        <SearchTechnologiesBar placeholder="Enter technology"/>
+                    </div>
                 </div>
 
 
