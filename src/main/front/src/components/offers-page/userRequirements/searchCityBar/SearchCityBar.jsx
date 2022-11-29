@@ -25,7 +25,7 @@ const SearchCityBar = (props) => {
         setCurrentWord(searchCity);
         setEnteredWord(searchCity);
         const newFilter = cities.filter((value) => {
-            return value.name.toLowerCase().includes(searchCity.toLowerCase());
+            return value.name.toLowerCase().startsWith(searchCity.toLowerCase());
         });
         if(searchCity === ""){
             setFilteredData([]);

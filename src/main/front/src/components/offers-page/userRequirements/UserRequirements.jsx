@@ -16,15 +16,19 @@ const UserRequirements = () => {
         <div>
             <Card >
                 <div className="main-body-req">
-                    <div className="search-bar">
-                        <SearchPositionBar placeholder="Enter position"/>
-                    </div>
+
                     <div className="search-bar">
                         <SearchCityBar placeholder="Enter city"/>
                     </div>
+
+                    <div className="search-bar">
+                        <SearchPositionBar placeholder="Enter position"/>
+                    </div>
+
                     <div className="search-bar">
                         <SearchTechnologiesBar placeholder="Enter technology"/>
                     </div>
+
                 </div>
 
 
