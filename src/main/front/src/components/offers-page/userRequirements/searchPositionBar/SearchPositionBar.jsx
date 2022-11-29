@@ -60,7 +60,7 @@ const SearchPositionBar = (props) => {
 
     return (
         <div>
-            <Card>
+            <Card >
                 <div className="search">
                     <div className="search-input">
                         <input type="text"

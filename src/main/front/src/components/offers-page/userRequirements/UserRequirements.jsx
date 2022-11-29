@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import "./userRequirements.css"
 import SearchCityBar from "./searchCityBar/SearchCityBar";
 import {Card} from "react-bootstrap";
 import SearchPositionBar from "./searchPositionBar/SearchPositionBar";
@@ -12,9 +13,15 @@ const UserRequirements = () => {
 
     return (
         <div>
-            <Card>
-                <SearchCityBar placeholder="Enter city"/>
-                <SearchPositionBar placeholder="Enter position"/>
+            <Card className="main-body-req">
+                <div className="search-bar">
+                    <SearchPositionBar placeholder="Enter position"/>
+                </div>
+                <div className="search-bar">
+                    <SearchCityBar placeholder="Enter city"/>
+                </div>
+
+
                 <div>
                     <h4>Salary</h4>
                     <input onChange={handleRangeValue} className="custom-slider" type="range" min="0" max="100000" step="1000"/>

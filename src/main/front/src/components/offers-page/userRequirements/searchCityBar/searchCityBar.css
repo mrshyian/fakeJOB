@@ -2,14 +2,17 @@
     cursor: pointer;
 }
 
+.search{
+    max-width: 10px;
+}
+
 .search input {
 
     border: 0;
     border-radius: 2px 0 2px 0;
     font-size: 18px;
     padding: 15px;
-    height: 30px;
-    width: 200px;
+    max-width: 250px;
 }
 
 .data-results:hover{
@@ -18,13 +21,17 @@
 
 .search-input{
     display: flex;
+
+
 }
+
+
 
 .search-icon{
 
     background-color: white;
     display: grid;
-    place-items: center;
+    place-items: center ;
 
 }
 input:focus{
